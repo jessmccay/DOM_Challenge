@@ -126,6 +126,7 @@ function carInfo(make, year, color){
       return "The car's brand is " + this.brand + ", the year is " + this.model + ", and the color is " + this.paint;
     },
     carSpeed: function() { return speed; },
+    //carSpeed: function () {if (speed <= 85) {return speed} else {speed = 85; return "Slowdown"} }
     carAccelerate: function() { return speed = speed + 5; },
     carBrake: function() { return speed = speed - 7; },
     maxSpeed: function()  {
@@ -161,7 +162,7 @@ function carInfo(make, year, color){
     //   return "The car's brand is " + this.brand + ", the year is " + this.model + ", and the color is " + this.paint;
     // },
     carSpeed: function() { return speed; },
-    // carAccelerate: function() { return speed = speed + 5; },git
+    // carAccelerate: function() { return speed = speed + 5; },
     carBrake: function() { speed = speed - ( Math.floor((Math.random() * (speed / 2)) + 0)) }
     // carBrake2: function() { speed = speed - 10;} (THIS LOOP WAS BREAKING OUR carBrake function)
     // maxSpeed: function()  {
